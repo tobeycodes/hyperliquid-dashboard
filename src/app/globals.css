@@ -1,26 +1,31 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --Color-Background-bg-primary: #06121b;
+  --Neutral-000---White: #fff;
+  --Neutral-Elevation-3: #163247;
+  --Neutral-Elevation-1: #0a1e2d;
+  --Neutral-Elevation-2-border: #0d2535;
+  --Neutral-200---Body-text: #b3b9be;
+  --Primary-400---Primary: #4fffab;
+  --Alert-400---Primary: #f34c68;
+  --Neutral-300---Tertiary-text: #889199;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-Color-Background-bg-primary: var(--Color-Background-bg-primary);
+  --color-Neutral-000---White: var(--Neutral-000---White);
+  --color-Neutral-Elevation-3: var(--Neutral-Elevation-3);
+  --color-Neutral-Elevation-1: var(--Neutral-Elevation-1);
+  --color-Neutral-Elevation-2-border: var(--Neutral-Elevation-2-border);
+  --color-Neutral-200---Body-text: var(--Neutral-200---Body-text);
+  --color-Primary-400---Primary: var(--Primary-400---Primary);
+  --color-Alert-400---Primary: var(--Alert-400---Primary);
+  --color-Neutral-300---Tertiary-text: var(--Neutral-300---Tertiary-text);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--Color-Background-bg-primary);
+  color: var(--Neutral-000---White);
+  font-family: var(--font-favorit);
 }
